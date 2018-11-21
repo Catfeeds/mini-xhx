@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>小浣熊后台系统</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link href="__ROOT__/Themes/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__ROOT__/Themes/Admin/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="__ROOT__/Themes/Admin/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="__ROOT__/Themes/Admin/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="__ROOT__/Themes/Admin/css/animate.css" rel="stylesheet">
+    <link href="__ROOT__/Themes/Admin/css/style.css" rel="stylesheet">
+    <link href="__ROOT__/Themes/Admin/css/page.css" rel="stylesheet">
+
+    <!-- layer -->
+    <link href="__ROOT__/Themes/Admin/js/plugins/layer/skin/layer.css" rel="stylesheet">
+	<script src="__ROOT__/Themes/Admin/js/jquery-2.1.1.min.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+
+                        <div class="dropdown profile-element"> 
+                        	<span></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="oneline m-t-xs"> <strong class="font-bold">{$adminname}</strong>
+                             </span>  <span class="text-muted text-xs oneline">管理员 <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="{:U('Admin/Login/editpws')}">修改密码</a>
+                                </li>
+                                <li><a href="{:U('Admin/Login/logout')}">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                        </div>
+                    </li>
+					<?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Index/',session('admin_id')) == false){
+					}else{
+					?>
+					<li>
+                        <a href="{:U('Index/index')}"><i class="fa fa-home"></i> <span class="nav-label">首页</span></a>
+						
+                    </li>
+					<?php }?>
+					<?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/User/',session('admin_id')) == true){
+                    ?>
+                    <li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">会员管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+								if($auth->check(MODULE_NAME . '/User/index',session('admin_id')) == true){
+                            ?>
+                                <li>
+                                    <a href="{:U('User/index')}">会员列表</a>
+                                </li>
+                            <?php
+								}
+							?>
+                     </ul>
+                    </li>
+                    <?php
+						}
+					?>
+                    <?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Carousel/',session('admin_id')) == true){
+                    ?>
+                    <li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">轮播图片管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+								if($auth->check(MODULE_NAME . '/Carousel/index',session('admin_id')) == true){
+                            ?>
+                            <li>
+                                <a href="{:U('Carousel/index')}">轮播图片列表</a>
+                            </li>
+                            <?php
+								}
+							?>
+                        </ul>
+                    </li>
+                    <?php
+						}
+					?>
+					<?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Child/',session('admin_id')) == true){
+                    ?>
+                    <li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">育儿百科</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+								if($auth->check(MODULE_NAME . '/Child/index',session('admin_id')) == true){
+                            ?>
+                                <li>
+                                    <a href="{:U('Child/index',array('cid'=>1))}">护理</a>
+                                    <a href="{:U('Child/index',array('cid'=>2))}">早教</a>
+                                    <a href="{:U('Child/index',array('cid'=>3))}">营养</a>
+                                    <a href="{:U('Child/index',array('cid'=>4))}">辣妈</a>
+                                </li>
+                            <?php
+								}
+							?>
+                     </ul>
+                    </li>
+                    <?php
+						}
+					?>
+					<?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Mr/',session('admin_id')) == true){
+                    ?>
+					<li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">萌娃启智</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+								if($auth->check(MODULE_NAME . '/Mr/index',session('admin_id')) == true){
+                            ?>
+                                <li>
+                                    <a href="{:U('Mr/edit',array('id'=>14))}">宝宝巴士</a>
+                                </li>
+                            <?php
+								}
+							?>
+                     </ul>
+                    </li>
+                    <?php
+						}
+					?>
+                    <?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Comment/',session('admin_id')) == true){
+                    ?>
+                    <li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">评论管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+								if($auth->check(MODULE_NAME . '/Comment/index',session('admin_id')) == true){
+                            ?>
+                            <li>
+                                <a href="{:U('Comment/index')}">评论列表</a>
+                            </li>
+                            <?php
+								}
+							?>
+                        </ul>
+                    </li>
+                    <?php
+						}
+					?>
+					<?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Goods/',session('admin_id')) == true){
+                    ?>
+                    <li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">商品管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+								if($auth->check(MODULE_NAME . '/Goods/index',session('admin_id')) == true){
+                            ?>
+                                <li>
+                                    <a href="{:U('Goods/index')}">商品列表</a>
+                                </li>
+                            <?php
+								}
+							?>
+                     </ul>
+                    </li>
+                    <?php
+						}
+					?>
+					<?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Orders/',session('admin_id')) == true){
+                    ?>
+                    <li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">订单管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+								if($auth->check(MODULE_NAME . '/Orders/index',session('admin_id')) == true){
+                            ?>
+                                <li>
+                                    <a href="{:U('Orders/index')}">订单列表</a>
+                                </li>
+                            <?php
+								}
+							?>
+                     </ul>
+                    </li>
+                    <?php
+						}
+					?>
+                    <?php
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Cache/',session('admin_id')) == true){
+                    ?>
+                    <li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">配置管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+								if($auth->check(MODULE_NAME . '/Cache/set',session('admin_id')) == true){
+                            ?>
+                                <li>
+                                    <a href="{:U('Cache/set')}">更新配置</a>
+                                </li>
+                            <?php
+								}
+							?>
+                     </ul>
+                    </li>
+                    <?php
+						}
+					?>
+					<?php 
+						$auth = new \Think\Auth;
+						if($auth->check(MODULE_NAME . '/Root/',session('admin_id')) == false){
+						}else{
+					?>
+						<li>
+	                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">账户管理</span><span class="fa arrow"></span></a>
+	                        <ul class="nav nav-second-level">
+								<?php 
+								if($auth->check(MODULE_NAME . '/Root/userlist',session('admin_id')) == false){
+							}else{
+							?>
+								<li>
+									<a href="{:U('Root/userlist')}">账户列表</a>
+	                            </li>
+								<?php 
+								}
+							if($auth->check(MODULE_NAME . '/Root/grouplist',session('admin_id')) == false){
+							}else{
+							?>
+	                            <li>
+	                            	<a href="{:U('Root/grouplist')}">账户组列表</a>
+	                            </li>
+								<?php 
+								}
+							if($auth->check(MODULE_NAME . '/Root/rulelist',session('admin_id')) == false){
+							}else{
+							?>
+								<li>
+									<a href="{:U('Root/rulelist')}">权限列表</a>
+	                            </li>
+								<?php 
+								}
+							?>
+	                        </ul>
+	                    </li>
+					<?php 
+						}
+					?>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message"><a href="{:U('Index/index')}" title="返回首页"><i class="fa fa-home"></i></a>欢迎使用后台管理系统</span>
+                        </li>
+                        <li>
+                            <a href="{:U('Login/index')}">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>

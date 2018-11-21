@@ -1,0 +1,92 @@
+<include file="Public:head"/>
+        <div class="gray-bg dashbard-1">
+            <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="#">主页</a></li>
+                                    <li><a>权限管理</a></li>
+                                    <li><strong>用户组设置</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                                <form method="post" action="" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">模块</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="module" value="Admin" readonly class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">选择组</label>
+                                        <div class="col-sm-2">
+                                            <select class="form-control m-b" name="type" id="type">
+                                                <option value="1" <if condition="$info.type eq 1"> selected="selected"</if>>管理员</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">组标题</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="title" value="{$info.title}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">组描述</label>
+                                        <div class="col-sm-4">
+											<textarea name="description" rows="3" class="form-control">{$info.description}</textarea>
+										</div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">状态</label>
+                                        <div class="col-sm-10">
+                                            <div class="radio col-sm-2">
+                                                <label>
+                                                    <input type="radio" <if condition="$info.status eq 1">checked</if> id="optionsRadios1" name="status" value="1">开启 
+                                                </label>
+                                            </div>
+                                            <div class="radio col-sm-2">
+                                                <label>
+                                                    <input type="radio" <if condition="$info.status eq 0">checked</if> id="optionsRadios2" name="status" value="0">关闭
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">权限选择</label>
+                                        <div class="col-sm-10">
+                                        <volist name="rulelist" id="rulelist">
+                                            <div class="form-group" style="border-top:1px dashed #000">
+                                            <div class="checkbox col-sm-2">
+                                                <label class="" for="checkbox{$rulelist.id}">
+                                                    <input type="checkbox" id="checkbox{$rulelist.id}" name="rule[]" value="{$rulelist.id}" <in name="rulelist['id']" value="$info['rules']">checked</in>>{$rulelist.title} 
+                                                </label>
+                                            </div><br/>
+                                                <volist name="rulelist.sublist" id="sublist">
+                                                    <div class="checkbox col-sm-2">
+                                                        <label class="" for="checkbox{$sublist.id}">
+                                                            <input type="checkbox" id="checkbox{$sublist.id}" name="rule[]" value="{$sublist.id}" <in name="sublist['id']" value="$info['rules']">checked</in>>{$sublist.title}
+                                                        </label>
+                                                    </div>
+                                                </volist>
+                                                </div>
+                                        </volist>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <button class="btn btn-primary" type="submit">保存</button>
+                                            <button class="btn btn-primary col-sm-offset-1" type="submit">取消</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+            </div>
+        </div>
+<include file="Public:foot"/>

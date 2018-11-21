@@ -1,0 +1,69 @@
+<include file="Public:head"/>
+	<style>
+	.mar_left{
+	margin-left: 8px;
+	}
+	</style>
+            <div class="gray-bg dashbard-1">
+                <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="#">主页</a></li>
+									<li>商品管理</li>
+                                    <li><strong>商品列表</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                            	 <form action="/admin.php/Goods/index"  method="get" id="orderform" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">商品名称</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="name" value="{$where.name}" class="form-control">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="submit" class="btn btn-sm btn-primary" id="search"><i class="fa fa-search"></i> 搜索</button>
+                                        </div>
+                                    </div>
+                                </form>
+								<div class="margin_block ">
+                                    <a href="{:U('Goods/add')}" class="btn btn-primary">添加</a>
+                                </div>
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>序号</th>
+                                            <th>名称</th>
+                                            <th>图片</th>
+											<th>已经兑换数量</th>
+											<th>兑换需要草莓数</th>
+											<!--<th>兑换需要水蜜桃数</th>-->
+											<th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<volist name="list" id="list">
+                                        <tr class="gradeX">
+                                            <td>{$list.g_id}</td>
+                                            <td>{$list.g_name}</td>
+                                            <td><if condition="$list.g_img neq ''"><img src="{$list.g_img}" width="60"/></if></td>
+                                            <td>{$list.g_sale_num}</td>
+                                            <td>{$list.g_strawberry}</td>
+                                            <!--<td>{$list.g_peach}</td>-->
+                                            <td>
+											<a href="{:U('Goods/add',array('id'=>$list['g_id']))}" class="red mar_left">编辑 </a>
+											
+                                            <a href="{:U('Goods/del',array('id'=>$list['g_id']))}" class="red mar_left">删除</a>
+											</td>
+                                        </tr>
+										</volist> 
+										<tr>
+											<td colspan="7"><div class="pages">{$page}</div></td>
+										</tr>  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+            </div>
+<include file="Public:foot"/>

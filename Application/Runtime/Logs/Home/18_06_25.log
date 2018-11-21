@@ -1,0 +1,26 @@
+[ 2018-06-25T10:34:17+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=getTodayArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0310s ]
+SQL: SELECT `id`,`title`,`img`,`url`,`cid` FROM `x_article` WHERE `type` = 2 AND `is_show` = 1 ORDER BY id desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_carousel_images` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `x_carousel_images` WHERE `status` = 1 AND `type` = 1 ORDER BY sort desc,id asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`cid`,`url` FROM `x_article` WHERE `type` = 4  [ RunTime:0.0010s ]
+
+[ 2018-06-25T10:35:00+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=getTodayArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`img`,`url`,`cid` FROM `x_article` WHERE `type` = 2 AND `is_show` = 1 ORDER BY id desc LIMIT 0,4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_carousel_images` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_carousel_images` WHERE `status` = 1 AND `type` = 1 ORDER BY sort desc,id asc  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`cid`,`url` FROM `x_article` WHERE `type` = 4  [ RunTime:0.0000s ]
+

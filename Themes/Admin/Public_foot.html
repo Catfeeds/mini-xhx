@@ -1,0 +1,112 @@
+		</div>	
+	</div>
+<!-- Mainly scripts -->
+   
+    <script src="__ROOT__/Themes/Admin/js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="__ROOT__/Themes/Admin/js/plugins/metisMenu/jquery.metisMenu.js"></script><!---->
+    <script src="__ROOT__/Themes/Admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="__ROOT__/Themes/Admin/js/plugins/jeditable/jquery.jeditable.js"></script>
+
+    <!-- Data Tables -->
+    <script src="__ROOT__/Themes/Admin/js/plugins/dataTables/jquery.dataTables.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="__ROOT__/Themes/Admin/js/hplus.js?v=2.2.0"></script>
+    <script src="__ROOT__/Themes/Admin/js/plugins/pace/pace.min.js"></script>
+
+    <!-- layerDate plugin javascript -->
+    <script src="__ROOT__/Themes/Admin/js/plugins/layer/laydate/laydate.js"></script>
+    <script>
+
+         //日期范围限制
+        var start = {
+            elem: '#start',
+            format: 'YYYY/MM/DD hh:mm:ss',
+            max: '2099-06-16 23:59:59', //最大日期
+            istime: true,
+            istoday: false,
+            choose: function (datas) {
+                end.min = datas; //开始日选好后，重置结束日的最小日期
+                end.start = datas //将结束日的初始值设定为开始日
+            }
+        };
+        var end = {
+            elem: '#end',
+            format: 'YYYY/MM/DD hh:mm:ss',
+            max: '2099-06-16 23:59:59',
+            istime: true,
+            istoday: false,
+            choose: function (datas) {
+                start.max = datas; //结束日选好后，重置开始日的最大日期
+            }
+        };
+        laydate(start);
+        laydate(end);
+    </script>  
+
+    <!-- 自定义js 
+    <script src="__ROOT__/Themes/Admin/js/content.min.js?v=1.0.0"></script>-->
+
+    <!--  Nestable List  -->
+    <script src="__ROOT__/Themes/Admin/js/plugins/nestable/jquery.nestable.js"></script>
+    <script>//列表
+        $(document).ready(function () {
+			
+			$('.dataTables-example').dataTable({"ordering": false});//
+			
+			var oTable = $('#editable').dataTable();
+			
+           /* var updateOutput = function (e) {
+                var list = e.length ? e : $(e.target),
+                    output = list.data('output');
+                if (window.JSON) {
+                    output.val(window.JSON.stringify(list.nestable('serialize'))); //, null, 2));
+                } else {
+                    output.val('浏览器不支持');
+                }
+            };
+            // activate Nestable for list 1
+            $('#nestable').nestable({
+                group: 1
+            }).on('change', updateOutput);
+
+            // activate Nestable for list 2
+            $('#nestable2').nestable({
+                group: 1
+            }).on('change', updateOutput);
+
+            // output initial serialised data
+            updateOutput($('#nestable').data('output', $('#nestable-output')));
+            updateOutput($('#nestable2').data('output', $('#nestable2-output')));
+
+            $('#nestable-menu').on('click', function (e) {
+                var target = $(e.target),
+                    action = target.data('action');
+                if (action === 'expand-all') {
+                    $('.dd').nestable('expandAll');
+                }
+                if (action === 'collapse-all') {
+                    $('.dd').nestable('collapseAll');
+                }
+            });*/
+			
+
+        });
+    </script>
+
+    <!-- 点击切换-->
+    <script>
+	function ordertype(ord){
+		type = $(ord).val();
+		if(type == 1){
+			location.href = "{:U('Shangcheng/orders',array('token'=>$token))}";
+			
+		}else{
+			location.href = "{:U('Waimai/orders',array('token'=>$token))}";
+		}
+	}
+    </script>
+	<!-- ECharts -->
+    <script src="__ROOT__/Themes/Admin/js/plugins/echarts/echarts-all.js"></script>
+</body>
+</html>

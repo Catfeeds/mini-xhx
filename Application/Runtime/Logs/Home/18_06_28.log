@@ -1,0 +1,44 @@
+[ 2018-06-28T11:54:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-06-28T13:36:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-06-28T14:35:49+08:00 ] 127.0.0.1 /wap.php?m=Home&c=User&a=getTodayScore&openid=oOd0H0ZkhdkibpJIudqd-ix063Zk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.0030s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' AND ( create_time>=1530115200 and create_time<1530201600 ) LIMIT 1   [ RunTime:0.0280s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 1 AND `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' AND ( create_time>=1530115200 and create_time<1530201600 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 2 AND `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' AND ( create_time>=1530115200 and create_time<1530201600 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 3 AND `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' AND ( create_time>=1530115200 and create_time<1530201600 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 4 AND `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' AND ( create_time>=1530115200 and create_time<1530201600 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 5 AND `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' AND ( create_time>=1530115200 and create_time<1530201600 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-06-28T15:05:04+08:00 ] 127.0.0.1 /wap.php?m=Home&c=User&a=getSignScore&openid=oOd0H0ZkhdkibpJIudqd-ix063Zk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_user` WHERE `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.0030s ]
+SQL: SELECT `step`,`strawberry`,`peach` FROM `x_bounds_log` WHERE `type` = 3 AND `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' AND ( create_time>=1530115200 and create_time<1530201600 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 3 AND `openid` = 'oOd0H0ZkhdkibpJIudqd-ix063Zk' LIMIT 1   [ RunTime:0.0000s ]
+

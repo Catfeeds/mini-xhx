@@ -1,0 +1,76 @@
+<include file="Public:head"/>
+        <div class="gray-bg dashbard-1">
+                <div class="row">
+                		<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/ueditor.config.js"></script>
+							<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/ueditor.all.min.js"> </script>
+							<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
+							<script type="text/javascript">
+								var ue = UE.getEditor('editor',{
+									imageUrl:"{:U('Company/addimg')}" ,        //图片上传提交地址
+								});
+							</script>
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="#">主页</a></li>
+                                    <li><a>商品管理</a></li>
+                                    <li><strong>商品添加/编辑</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">名称</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="name" value="{$info.g_name}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">图片</label>
+										<div class="col-sm-3">
+											<input type="file" name="g_img" class="form-control">
+										</div>
+										<div class="col-sm-3" style="position: relative;">
+											<if condition="$info.g_img eq ''"> 
+												<img src="__ROOT__/Themes/Admin/img/no_pic.png" id="site_logo" width="80px" height="80px"> 
+											<else /> 
+												<img src="__ROOT__{$info.g_img}" id="site_logo" width="80px" height="80px">
+												
+											</if>
+										</div>
+									</div>
+									<div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">兑换需要草莓数量</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="strawberry" value="{$info.g_strawberry}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!--<div class="hr-line-dashed"></div>-->
+									<!--<div class="form-group">-->
+                                        <!--<label class="col-sm-2 control-label">兑换需要水蜜桃数量</label>-->
+                                        <!--<div class="col-sm-2">-->
+                                            <!--<input type="text" name="peach" value="{$info.g_peach}" class="form-control"><br/><span style="color:red">如果草莓和水蜜桃都有填写，水蜜桃优先显示</span>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+										<label class="col-sm-2 control-label">详情</label>
+										<div class="col-sm-8">
+											<script id="editor" type="text/plain" style="width: 100%; height: 240px;">{$info.g_desc|htmlspecialchars_decode}</script>
+										</div>
+									</div>
+									<div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <button class="btn btn-primary" type="submit">保存</button>
+                                            <button class="btn btn-primary col-sm-offset-1" type="submit">取消</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+        </div>
+<include file="Public:foot"/>

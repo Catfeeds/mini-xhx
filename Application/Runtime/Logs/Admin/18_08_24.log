@@ -1,0 +1,676 @@
+[ 2018-08-24T09:18:16+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+
+[ 2018-08-24T09:18:16+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2018-08-24T09:18:21+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0563s ]
+SQL: SELECT * FROM `x_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000014s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+
+[ 2018-08-24T09:18:25+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0604s ]
+SQL: SELECT * FROM `x_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000014s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+
+[ 2018-08-24T09:18:38+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0671s ]
+SQL: SELECT * FROM `x_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `x_admin` SET `last_login_ip`='127.0.0.1',`last_login_time`='1535073518' WHERE `name` = 'admin' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000014s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000286s ]
+
+[ 2018-08-24T09:18:39+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\IndexController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0072s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0068s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\222175dcb33b4771668f24c7f484ba64.php 第 337 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\222175dcb33b4771668f24c7f484ba64.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2018-08-24T09:18:41+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\IndexController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0062s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0065s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\222175dcb33b4771668f24c7f484ba64.php 第 337 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\222175dcb33b4771668f24c7f484ba64.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2018-08-24T09:18:44+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\UserController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_user` [ RunTime:0.0072s ]
+NOTIC: [8] Undefined variable: where E:\code\xhx\Application\Admin\Controller\UserController.class.php 第 28 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `x_user` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where E:\code\xhx\Application\Admin\Controller\UserController.class.php 第 33 行.
+SQL: SELECT * FROM `x_user` ORDER BY  id desc  LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_user` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_user` WHERE ( createtime>=1535040000 and createtime<1535073524 ) LIMIT 1   [ RunTime:0.0447s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0064s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0084s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: nickname E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 257 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 263 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 264 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined index: name E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 298 行.
+NOTIC: [8] Undefined index: area E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 307 行.
+NOTIC: [8] Undefined index: birth_day E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 308 行.
+NOTIC: [8] Undefined index: mobile E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 309 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 313 行.
+NOTIC: [8] Undefined index: is_special E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 314 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 445 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\78e2d60dbd31edc7ff6a539bcd62cff4.php 第 448 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023068s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2018-08-24T09:18:46+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Child&a=index&cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\ChildController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_article` WHERE `cid` = '1' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_article` WHERE `cid` = '1' AND `type` = 2 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0074s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0074s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: is_show E:\code\xhx\Application\Runtime\Cache\Admin\f59905c6246c1f0f1e776e19ec14098e.php 第 275 行.
+NOTIC: [8] Undefined index: is_show E:\code\xhx\Application\Runtime\Cache\Admin\f59905c6246c1f0f1e776e19ec14098e.php 第 275 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\f59905c6246c1f0f1e776e19ec14098e.php 第 395 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\f59905c6246c1f0f1e776e19ec14098e.php 第 398 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-08-24T09:18:49+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Child&a=index&cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\ChildController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_article` WHERE `cid` = '2' AND `type` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_article` WHERE `cid` = '2' AND `type` = 2 ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0067s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0067s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: is_show E:\code\xhx\Application\Runtime\Cache\Admin\f59905c6246c1f0f1e776e19ec14098e.php 第 275 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\f59905c6246c1f0f1e776e19ec14098e.php 第 395 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\f59905c6246c1f0f1e776e19ec14098e.php 第 398 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2018-08-24T09:18:52+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Child&a=add&id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\ChildController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `x_article` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0064s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0092s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: is_show E:\code\xhx\Application\Runtime\Cache\Admin\ed3362784026d22821932596a2cf20b5.php 第 304 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\ed3362784026d22821932596a2cf20b5.php 第 421 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\ed3362784026d22821932596a2cf20b5.php 第 424 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-08-24T09:19:01+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Mr&a=edit&id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\MrController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `x_article` WHERE `type` = 4 AND `id` = 14 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0069s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0072s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: appid E:\code\xhx\Application\Runtime\Cache\Admin\9a0031df757bea4603791febe2ddad2f.php 第 273 行.
+NOTIC: [8] Undefined index: path E:\code\xhx\Application\Runtime\Cache\Admin\9a0031df757bea4603791febe2ddad2f.php 第 280 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\9a0031df757bea4603791febe2ddad2f.php 第 422 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\9a0031df757bea4603791febe2ddad2f.php 第 425 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2018-08-24T09:19:04+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined variable: where E:\code\xhx\Application\Admin\Controller\GoodsController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `x_goods` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where E:\code\xhx\Application\Admin\Controller\GoodsController.class.php 第 18 行.
+SQL: SELECT `g_id`,`g_name`,`g_img`,`g_sale_num`,`g_strawberry`,`g_peach` FROM `x_goods` ORDER BY g_id desc LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where E:\code\xhx\Application\Admin\Controller\GoodsController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0064s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0071s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\c57044e495d3bf9b32d6ca2a73d36e0d.php 第 402 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\c57044e495d3bf9b32d6ca2a73d36e0d.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-08-24T09:19:07+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Orders&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\OrdersController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_orders` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_orders` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_orders` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0069s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: totalstrawberry E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 291 行.
+NOTIC: [8] Undefined index: totalpeach E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 292 行.
+NOTIC: [8] Undefined index: num E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 293 行.
+NOTIC: [8] Undefined index: totalstrawberry E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 291 行.
+NOTIC: [8] Undefined index: totalpeach E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 292 行.
+NOTIC: [8] Undefined index: num E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 293 行.
+NOTIC: [8] Undefined index: totalstrawberry E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 291 行.
+NOTIC: [8] Undefined index: totalpeach E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 292 行.
+NOTIC: [8] Undefined index: num E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 293 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 430 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 433 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-08-24T09:19:29+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Root&a=userlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0261s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\RootController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `x_admin` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_admin` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `x_auth_group_access` WHERE `uid` = '2' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_auth_group_access` WHERE `uid` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0064s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0080s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\78b2769c96099e0a0b3ad6cc1d1afdaa.php 第 248 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\78b2769c96099e0a0b3ad6cc1d1afdaa.php 第 383 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\78b2769c96099e0a0b3ad6cc1d1afdaa.php 第 386 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-08-24T09:19:59+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Cache&a=set
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\CacheController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0061s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0073s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\34badcb55e8666639c6245000a9a406b.php 第 417 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\34badcb55e8666639c6245000a9a406b.php 第 420 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-08-24T09:20:02+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Root&a=userlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\RootController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `x_admin` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_admin` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `x_auth_group_access` WHERE `uid` = '2' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_auth_group_access` WHERE `uid` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0069s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0074s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\78b2769c96099e0a0b3ad6cc1d1afdaa.php 第 248 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\78b2769c96099e0a0b3ad6cc1d1afdaa.php 第 383 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\78b2769c96099e0a0b3ad6cc1d1afdaa.php 第 386 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2018-08-24T09:20:14+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\IndexController::$admin has no effect E:\code\xhx\Application\Admin\Controller\AdminController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0062s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0065s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33') AND `type` = 1 AND `status` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\222175dcb33b4771668f24c7f484ba64.php 第 337 行.
+NOTIC: [8] Undefined variable: token E:\code\xhx\Application\Runtime\Cache\Admin\222175dcb33b4771668f24c7f484ba64.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+

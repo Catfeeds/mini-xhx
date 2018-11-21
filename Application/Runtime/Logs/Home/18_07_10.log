@@ -1,0 +1,24 @@
+[ 2018-07-10T17:10:40+08:00 ] 127.0.0.1 /wap.php?m=Home&c=User&a=sign&openid=oOd0H0ZkhdkibpJIudqd-ix063Zk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-10T17:10:48+08:00 ] 127.0.0.1 /wap.php?m=Home&c=User&a=sign&openid=oOd0H0ZkhdkibpJIudqd-ix063Zk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-07-10T17:10:55+08:00 ] 127.0.0.1 /wap.php?m=Home&c=User&a=sign&openid=oOd0H0ZkhdkibpJIudqd-ix063Zk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+

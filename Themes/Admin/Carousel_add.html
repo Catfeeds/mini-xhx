@@ -1,0 +1,91 @@
+<include file="Public:head"/>
+        <div class="gray-bg dashbard-1">
+                <div class="row">
+                		<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/ueditor.config.js"></script>
+							<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/ueditor.all.min.js"> </script>
+							<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
+							<script type="text/javascript">
+								var ue = UE.getEditor('editor',{
+									imageUrl:"{:U('Company/addimg')}" ,        //图片上传提交地址
+								});
+							</script>
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="#">主页</a></li>
+                                    <li><a>广告图管理</a></li>
+                                    <li><strong>广告图添加/编辑</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">外部链接地址</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="url" value="{$info.url}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">图片</label>
+										<div class="col-sm-3">
+											<input type="file" name="img" class="form-control">
+										</div>
+										<div class="col-sm-3" style="position: relative;">
+											<if condition="$info.img eq ''"> 
+												<img src="__ROOT__/Themes/Admin/img/no_pic.png" id="site_logo" width="80px" height="80px"> 
+											<else /> 
+												<img src="__ROOT__{$info.img}" id="site_logo" width="80px" height="80px">
+												
+											</if>
+										</div>
+									</div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">排序</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="sort" value="{$info.sort}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">关联的文章</label>
+                                        <div class="col-sm-2">
+                                            <select class="form-control m-b" name="aid">
+                                                    <option value="0">请选择关联文章</option>
+                                                <volist name="articleList" id="article" key="k">
+                                                    <option  <if condition="$article.id eq $info['aid']">selected = "selected"</if> value="{$article.id}">{$article.title}</option>
+                                                </volist>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">状态</label>
+                                        <div class="col-sm-10">
+                                            <div class="radio col-sm-1">
+                                                <label>
+                                                    <input type="radio" <if condition="$info.status eq 1">checked</if> id="battery_type1" name="status" value="1">显示
+                                                </label>
+                                            </div>
+                                            <div class="radio col-sm-1">
+                                                <label>
+                                                    <input type="radio" <if condition="$info.status eq 2">checked</if> id="battery_type2" name="status" value="2">隐藏
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <input type="hidden" name="type" value="{$info.type}">
+                                            <button class="btn btn-primary" type="submit">保存</button>
+                                            <button class="btn btn-primary col-sm-offset-1" type="submit">取消</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+        </div>
+<include file="Public:foot"/>

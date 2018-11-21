@@ -1,0 +1,189 @@
+[ 2018-08-13T09:37:41+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addShareNum&id=2&openid=oN_IL0aohqA4Dh2epPaiPmKVaycM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_share_article_detail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_share_article_detail` WHERE ( openid='oN_IL0aohqA4Dh2epPaiPmKVaycM' and aid=2 and create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: UPDATE `x_article` SET `sharenum`=sharenum+1 WHERE `id` = 2 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.0280s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 4 AND `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND ( create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `x_bounds_log` (`openid`,`type`,`strawberry`,`create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','4','3','1534124261') [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `x_user` [ RunTime:0.0020s ]
+SQL: UPDATE `x_user` SET `strawberry`=strawberry+3 WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' [ RunTime:0.0360s ]
+SQL: INSERT INTO `x_share_article_detail` (`aid`,`openid`,`create_time`) VALUES ('2','oN_IL0aohqA4Dh2epPaiPmKVaycM','1534124261') [ RunTime:0.0440s ]
+
+[ 2018-08-13T09:37:46+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addShareNum&id=2&openid=oN_IL0aohqA4Dh2epPaiPmKVaycM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_share_article_detail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_share_article_detail` WHERE ( openid='oN_IL0aohqA4Dh2epPaiPmKVaycM' and aid=2 and create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: UPDATE `x_article` SET `sharenum`=sharenum+1 WHERE `id` = 2 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.0020s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 4 AND `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND ( create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `x_bounds_log` (`openid`,`type`,`strawberry`,`create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','4','3','1534124266') [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `x_user` [ RunTime:0.0040s ]
+SQL: UPDATE `x_user` SET `strawberry`=strawberry+3 WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' [ RunTime:0.0010s ]
+SQL: INSERT INTO `x_share_article_detail` (`aid`,`openid`,`create_time`) VALUES ('2','oN_IL0aohqA4Dh2epPaiPmKVaycM','1534124266') [ RunTime:0.0830s ]
+
+[ 2018-08-13T09:37:49+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addShareNum&id=2&openid=oN_IL0aohqA4Dh2epPaiPmKVaycM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_share_article_detail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_share_article_detail` WHERE ( openid='oN_IL0aohqA4Dh2epPaiPmKVaycM' and aid=2 and create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: UPDATE `x_article` SET `sharenum`=sharenum+1 WHERE `id` = 2 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.0020s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 4 AND `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND ( create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `x_bounds_log` (`openid`,`type`,`strawberry`,`create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','4','3','1534124269') [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `x_user` [ RunTime:0.0010s ]
+SQL: UPDATE `x_user` SET `strawberry`=strawberry+3 WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' [ RunTime:0.0010s ]
+SQL: INSERT INTO `x_share_article_detail` (`aid`,`openid`,`create_time`) VALUES ('2','oN_IL0aohqA4Dh2epPaiPmKVaycM','1534124269') [ RunTime:0.0620s ]
+
+[ 2018-08-13T09:37:52+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addShareNum&id=2&openid=oN_IL0aohqA4Dh2epPaiPmKVaycM
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_share_article_detail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_share_article_detail` WHERE ( openid='oN_IL0aohqA4Dh2epPaiPmKVaycM' and aid=2 and create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: UPDATE `x_article` SET `sharenum`=sharenum+1 WHERE `id` = 2 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.0030s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 4 AND `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND ( create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-13T09:43:03+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addComment&id=2&content=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-13T09:44:10+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addComment&id=2&content=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-08-13T09:44:50+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addComment&id=2&content=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_comment` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_comment` WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND `a_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `x_comment` (`openid`,`a_id`,`c_content`,`c_create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','2','测试测试测试测试测试测试','1534124690') [ RunTime:0.0470s ]
+SQL: UPDATE `x_article` SET `comentnum`=comentnum+1 WHERE `id` = 2 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.0060s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 5 AND `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND ( create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `x_bounds_log` (`openid`,`type`,`strawberry`,`create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','5','2','1534124690') [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `x_user` [ RunTime:0.0030s ]
+SQL: UPDATE `x_user` SET `strawberry`=strawberry+2 WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' [ RunTime:0.0010s ]
+
+[ 2018-08-13T09:44:52+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addComment&id=2&content=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_article` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_comment` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_comment` WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND `a_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-08-13T09:45:00+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addComment&id=2&content=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_comment` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_comment` WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND `a_id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `x_comment` (`openid`,`a_id`,`c_content`,`c_create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','4','测试测试测试测试测试测试','1534124699') [ RunTime:0.0840s ]
+SQL: UPDATE `x_article` SET `comentnum`=comentnum+1 WHERE `id` = 4 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.1010s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 5 AND `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND ( create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `x_bounds_log` (`openid`,`type`,`strawberry`,`create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','5','2','1534124700') [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `x_user` [ RunTime:0.0650s ]
+SQL: UPDATE `x_user` SET `strawberry`=strawberry+2 WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' [ RunTime:0.0010s ]
+
+[ 2018-08-13T09:45:15+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addComment&id=2&content=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_comment` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_comment` WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND `a_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `x_comment` (`openid`,`a_id`,`c_content`,`c_create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','5','测试测试测试测试测试测试','1534124715') [ RunTime:0.0850s ]
+SQL: UPDATE `x_article` SET `comentnum`=comentnum+1 WHERE `id` = 5 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.0050s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 5 AND `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND ( create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `x_bounds_log` (`openid`,`type`,`strawberry`,`create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','5','2','1534124715') [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `x_user` [ RunTime:0.0010s ]
+SQL: UPDATE `x_user` SET `strawberry`=strawberry+2 WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' [ RunTime:0.0010s ]
+
+[ 2018-08-13T09:45:18+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addComment&id=2&content=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_comment` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_comment` WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND `a_id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-08-13T09:45:37+08:00 ] 127.0.0.1 /wap.php?m=Home&c=Article&a=addComment&id=2&content=%E6%B5%8B%E8%AF%95
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_article` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_comment` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_comment` WHERE `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND `a_id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `x_comment` (`openid`,`a_id`,`c_content`,`c_create_time`) VALUES ('oN_IL0aohqA4Dh2epPaiPmKVaycM','7','测试测试测试测试测试测试','1534124737') [ RunTime:0.0790s ]
+SQL: UPDATE `x_article` SET `comentnum`=comentnum+1 WHERE `id` = 7 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_bounds_log` [ RunTime:0.1340s ]
+SQL: SELECT SUM(strawberry) AS tp_sum FROM `x_bounds_log` WHERE `type` = 5 AND `openid` = 'oN_IL0aohqA4Dh2epPaiPmKVaycM' AND ( create_time>=1534089600 and create_time<1534176000 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-08-13T11:41:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+

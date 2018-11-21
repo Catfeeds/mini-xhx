@@ -1,0 +1,50 @@
+<include file="Public:head"/>
+            <div class="gray-bg dashbard-1">
+                <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="index.html">主页</a></li>
+                                    <li>权限管理</li>
+                                    <li><strong>账户管理</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+								<div class="margin_block col-sm-12">
+                                    <a href="{:U('Root/useradd',array('token'=>$token))}" class="btn btn-primary">添加</a>
+                                </div>
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+											<th>权限组</th>
+                                            <th>账户</th>
+                                            <th>手机号</th>
+                                            <th>创建时间</th>
+                                            <th>状态</th>
+											<th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<volist name="list" id="list">
+                                        <tr class="gradeX">
+											<td>{$list.group_id}</td>
+                                            <td>{$list.name}</td>
+                                            <td>{$list.tel}</td>
+                                            <td>{$list.addtime|date='Y-m-d H:i:s',###}</td>
+                                            <td><if condition="$list.status eq 1">正常<else />已关闭</if></td>
+											<td>
+											<a href="{:U('Root/useradd',array('id'=>$list['id']))}" class="red mar_left">编辑</a>
+                                            <a href="{:U('Root/usersta',array('id'=>$list['id']))}" class="red"><if condition="$list.status eq 1">关闭<else />开启</if></a>
+											</td>
+                                        </tr>
+										</volist>
+										<tr>
+											<td colspan="6"><div class="pages">{$page}</div></td>
+										</tr>  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+            </div>
+<include file="Public:foot"/>

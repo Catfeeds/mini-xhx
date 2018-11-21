@@ -1,0 +1,84 @@
+<include file="Public:head"/>
+        <div class="gray-bg dashbard-1">
+                <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="#">主页</a></li>
+                                    <li><a>配置管理</a></li>
+                                    <li><strong>更新配置</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                                <form method="post" action="" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">注册登录返还草莓</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="register" value="{$info.register}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">邀请好友返还草莓</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="invite" value="{$info.invite}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">签到返还草莓</label>
+                                        <div class="col-sm-10">
+                                            <volist name="info.sign" id="sign">
+                                                <input type="text" name="sign[]" value="{$sign}" class="form-control" style="display:inline-block;width:60px">
+                                            </volist>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">分享知识返还草莓</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="share" value="{$info.share}" class="form-control">
+                                        </div>
+                                        <label class="col-sm-2 control-label">每天封顶</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="maxshare" value="{$info.maxShare}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">知识评论返还草莓</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="comment" value="{$info.comment}" class="form-control">
+                                        </div>
+                                        <label class="col-sm-2 control-label">每天封顶</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="maxcomment" value="{$info.maxComment}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">生日返还草莓</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="birth" value="{$info.birth}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">草莓兑换水蜜桃比例</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="rate" value="{$info.rate}" class="form-control">
+                                        </div>
+                                    </div>
+									<div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <button class="btn btn-primary" type="submit">保存</button>
+                                            <button class="btn btn-primary col-sm-offset-1" type="submit">取消</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+        </div>
+<include file="Public:foot"/>

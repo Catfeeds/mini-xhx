@@ -1,0 +1,115 @@
+<include file="Public:head"/>
+            <div class="wrapper wrapper-content animated fadeInUp">
+                <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="{:U('Index/index')}">主页</a></li>
+                                    <li>基础功能</li>
+									<li><strong>公众号信息</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal">
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">公众号名称</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="wxname" value="{$wxuser.wxname}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">公众号原始id</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="wxid" value="{$wxuser.wxid}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">微信号</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="weixin" value="{$wxuser.weixin}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">二维码</label>
+                                        <div class="col-sm-3">
+											<input type="file" name="pic" class="form-control">
+                                        </div>
+										<div class="col-sm-3">
+                                            <if condition="$wxuser.pic eq ''">
+                                                <img src="__ROOT__/Themes/User/img/no_pic.png" width="80px" height="80px">
+                                            <else />
+                                                <img src="__ROOT__{$wxuser.pic}" width="80px" height="80px">
+                                            </if>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">AppID</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="appid" value="{$wxuser.appid}" class="form-control">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="red black_font">用于微信支付，分享,网页授权,渠道二维码等。</span>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">AppSecret</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="appsecret" value="{$wxuser.appsecret}" class="form-control">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="red black_font">用于微信支付，分享,网页授权,渠道二维码等</span>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">Mchid</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="mchid" value="{$wxuser.mchid}" class="form-control">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="red black_font">用于微信支付</span>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <label class="col-sm-2 control-label">key</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" name="key" value="{$wxuser.key}" class="form-control">
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="red black_font">用于微信支付</span>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">是否开启微信授权</label>
+                                        <div class="col-sm-10">
+                                            <div class="radio col-sm-2">
+                                                <label>
+                                                    <input type="radio" <if condition="$wxuser.isweixin eq 1">checked</if> id="isweixin1" name="isweixin" value="1"> <i></i>开启 
+                                                </label>
+                                            </div>
+                                            <div class="radio col-sm-2">
+                                                <label>
+                                                    <input type="radio" <if condition="$wxuser.isweixin eq 0">checked</if> id="isweixin2" name="isweixin" value="0"> <i></i>关闭
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <button class="btn btn-sm btn-success" type="submit">保存</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+<include file="Public:foot"/>

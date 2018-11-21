@@ -1,0 +1,28 @@
+/*
+ *add by lin on 2017/8/7 10:57
+ *分页样式
+*/
+@CHARSET "UTF-8";
+.pages{
+	width:100%;
+	text-align:center;
+	padding:10px 0;
+	clear:both;
+	color:#676A6C;
+}
+.pages a,.pages .current{
+	font-size:14px;
+	font-familly:Arial;
+	margin:0 2px;
+	color:#676A6C;
+}
+.pages a,.pages .current{
+	border:2px solid #DDDDDD;
+	background:#fff;
+	padding:2px 6px;
+	text-decoration:none;
+}
+.pages .current,.pages a:hover{
+	background:#EEEEEE;
+	color:#337ab7;
+} 

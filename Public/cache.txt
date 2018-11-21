@@ -1,0 +1,1 @@
+{"register":"30","invite":"10","sign":["1","2","3","4","5","6","7"],"share":"3","maxShare":"10","comment":"2","maxComment":"6","birth":"300","rate":"10"}

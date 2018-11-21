@@ -1,0 +1,211 @@
+<include file="Public:head"/>
+        <div class="gray-bg dashbard-1">
+                <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="{:U('Index/index')}">主页</a></li>
+                                    <li>会员管理</li>
+                                    <li><strong>公众号列表</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                                <form action=""  method="post" id="orderform" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">名称</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="name" value="{$where.name}" class="form-control">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="submit" class="btn btn-sm btn-primary" id="search"><i class="fa fa-search"></i> 搜索</button>
+                                        </div>
+                                    </div>
+                                </form> 
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th width="70">头像</th>
+											<th>公众号名称</th>
+                                            <th>性别</th>
+											<th>手机号</th>
+                                            <th>真实姓名</th>
+                                            <th>身份证号</th>
+                                            <th>用户类型</th>
+											<th>二维码</th>
+											<th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<volist name="list" id="list">
+                                        <tr>
+                                            <td>
+                                                <if condition="$list.userinfo.headimgurl neq ''">
+                                                    <img src="{$list.userinfo.headimgurl}" width="60"/>
+                                                <else />
+                                                    <span class="">无头像</span>
+                                                </if>
+                                            </td>
+											<td>
+											{$list.nickname}
+                                            </td>
+                                            <td>
+											<if condition="$list.sex eq 1">
+											男
+											<elseif condition="$list.sex eq 2"/>
+											女
+											<else />
+											未知
+											</if>
+                                            </td>
+											<td>{$list.tel}</td>
+                                            <td>{$list.name}</td>
+                                            <td>{$list.cardid}</td>
+                                            <td>
+											<switch name="list.usertype">
+											<case value="1">普通用户</case>
+											<case value="2">面试官</case>
+											<case value="3">招聘员</case>
+											<case value="4">推荐员</case>
+											<default />
+											</switch></td>
+											<td><img src="/wap.php?g=Home&m=Qrcode&a=qrcode&url={$list.qrurl}" style="width:120px;"></td>
+											<td>
+											<if condition="$list.usertype eq '1'">
+                                            <a  href="{:U('Member/set',array('type'=>2,'id'=>$list['id']))}" class="red block_btn">设置面试官</a>
+											<a  href="{:U('Member/set',array('type'=>4,'id'=>$list['id']))}" class="red block_btn">设置推荐员</a>
+											<else />
+											<a  href="{:U('Member/set',array('type'=>$list['usertype'],'id'=>$list['id']))}" class="red block_btn">设置</a>
+											</if>
+											<!--<a  href="{:U('Member/del',array('id'=>$list['id']))}" class="red">删除</a>-->
+											</td>
+                                        </tr>
+										</volist>
+                                    </tbody>
+                                </table>
+								<div class="pages">{$page}</div>
+                            </div>
+							<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content animated bounceInRight">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
+											</button>
+											<h4 class="modal-title">关联商户</h4>
+									</div>
+									<div class="modal-body">
+										<div class="form-group">
+											<label>选择商户</label>
+											<select class="form-control m-b" id="expresscompany" name="sid">
+											</select>
+										</div>
+										
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+										<input type="hidden" name="id" value="" id="mid">
+										<a onclick="addstore()" class="btn btn-primary">确定</a>
+									</div>
+									<script>
+									</script>
+									</div>
+								</div>
+							</div>
+							<script>
+    function clickstore(id){
+		$("#expresscompany").html(' ');
+		$.ajax({
+			url:"{:U('Member/store')}",
+			type:"POST",
+			data:{id:id},
+			dataType:"json",
+			success:function(data){
+				$("#mid").val(id);
+				if(data.status == 1){
+					var list = data.list;
+					for(var i in list){
+						var option=$("<option  xi='"+list[i]['id']+"'></option>");
+						$(option).val(list[i]['id']);
+						$(option).html(list[i]['name']);
+						$("#expresscompany").append(option);
+					}
+				}else{
+					alert('错误')
+				}
+			}
+			
+		});
+	};
+	
+	function addstore(){
+		var id = $("#mid").val();
+		var sid = $("#expresscompany").val();
+		$.ajax({
+			url:"{:U('Member/addsm')}",
+			type:"POST",
+			data:{id:id,sid:sid},
+			dataType: "json",
+			success:function(data){
+				if(data == 1){
+					alert('成功');
+					$('#myModal').modal('hide')
+				}else if(data == 2){
+				alert('失败')
+				}else if(data == 3){
+				alert('缺少会员id ')
+				}else if(data == 4){
+				alert('缺少商户id ')
+				}
+			}
+		});
+	}
+
+	function state(obj,id, type) {
+        $.post("{:U('Store/editstatus')}"
+                , {'op':'setgoodsproperty',id: id, type: type, data: $(obj).attr("data")}
+        , function (d) {
+            if (type == 'isrecommend') {
+                //alert(d.data == '1' ? '推荐' : '非推荐');
+            }
+            if (type == 'status') {
+                //alert(d.data == '1' ? '开启' : '关闭');
+            }
+            $(obj).attr("data", d.data);
+        }
+        , "json");/**/
+    }
+	function ggide(id, type) {
+		if(type == 1){
+		identity = $("#isadvisor"+id).val();
+		}else{
+		identity = $("#isjoin"+id).val();
+		}
+		$.post("{:U('Member/editgg')}",{id:id,type:type,identity:identity},function(data){
+			alert(data.msg)
+		}, "json");
+	}
+</script>
+							<style>
+		.block_info-info{
+			background-color:#1AB394;
+		}
+		</style>
+							<script>
+function state(obj,id, type) {
+        $.post("{:U('Store/editstatus')}"
+                , {'op':'setgoodsproperty',id: id, type: type, data: $(obj).attr("data")}
+        , function (d) {
+            if (type == 'isrecommend') {
+                //alert(d.data == '1' ? '推荐' : '非推荐');
+            }
+            if (type == 'status') {
+                //alert(d.data == '1' ? '开启' : '关闭');
+            }
+            $(obj).attr("data", d.data);
+        }
+        , "json");/**/
+    }
+</script>
+                        </div>
+                </div>
+        </div>
+<include file="Public:foot"/>

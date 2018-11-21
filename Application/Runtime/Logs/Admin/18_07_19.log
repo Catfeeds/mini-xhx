@@ -1,0 +1,576 @@
+[ 2018-07-19T09:35:02+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-07-19T09:35:02+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:35:07+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `x_admin` WHERE `name` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `x_admin` SET `last_login_ip`='127.0.0.1',`last_login_time`='1531964107' WHERE `name` = 'admin' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:35:08+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\IndexController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0320s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\222175dcb33b4771668f24c7f484ba64.php 第 337 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\222175dcb33b4771668f24c7f484ba64.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.197011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.198011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:35:12+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0290s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `x_goods` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 18 行.
+SQL: SELECT `g_id`,`g_name`,`g_img`,`g_sale_num`,`g_strawberry`,`g_peach` FROM `x_goods` ORDER BY g_id desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\c57044e495d3bf9b32d6ca2a73d36e0d.php 第 402 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\c57044e495d3bf9b32d6ca2a73d36e0d.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:35:16+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=add&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 408 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 411 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:35:21+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=add&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: editorValue E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 49 行.
+NOTIC: [8] Undefined index: peach E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 51 行.
+ERR: 1048:Column 'g_peach' cannot be null
+ [ SQL语句 ] : UPDATE `x_goods` SET `g_img`='/Uploads/article//2018-05-27/5b0a30084846a.jpg',`g_name`='测试3',`g_desc`='',`g_strawberry`='50',`g_peach`=NULL WHERE `g_id` = 3
+ERR: 1048:Column 'g_peach' cannot be null
+ [ SQL语句 ] : UPDATE `x_goods` SET `g_img`='/Uploads/article//2018-05-27/5b0a30084846a.jpg',`g_name`='测试3',`g_desc`='',`g_strawberry`='50',`g_peach`=NULL WHERE `g_id` = 3
+
+[ 2018-07-19T09:36:09+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=add&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: editorValue E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 49 行.
+SQL: UPDATE `x_goods` SET `g_img`='/Uploads/article//2018-05-27/5b0a30084846a.jpg',`g_name`='测试3',`g_desc`='',`g_strawberry`='50',`g_peach`='0' WHERE `g_id` = 3 [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020001s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 259 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 269 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 278 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 285 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 292 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 408 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 411 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.073004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-07-19T09:36:10+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `x_goods` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 18 行.
+SQL: SELECT `g_id`,`g_name`,`g_img`,`g_sale_num`,`g_strawberry`,`g_peach` FROM `x_goods` ORDER BY g_id desc LIMIT 0,20   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\c57044e495d3bf9b32d6ca2a73d36e0d.php 第 402 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\c57044e495d3bf9b32d6ca2a73d36e0d.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:36:13+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 408 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 411 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:36:23+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\xiaohuanxiong\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: editorValue E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 56 行.
+SQL: INSERT INTO `x_goods` (`g_img`,`g_name`,`g_desc`,`g_strawberry`,`g_peach`,`g_create_time`) VALUES ('/Uploads/article//2018-07-19/5b4feb178ca02.jpg','112121','','10','0','1531964183') [ RunTime:0.0510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.023001s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 259 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 269 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 278 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 285 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 292 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 408 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\b2d433e94cef2c512db2ed8e9448460b.php 第 411 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.044003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-07-19T09:36:24+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Goods&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\GoodsController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `x_goods` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 18 行.
+SQL: SELECT `g_id`,`g_name`,`g_img`,`g_sale_num`,`g_strawberry`,`g_peach` FROM `x_goods` ORDER BY g_id desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\GoodsController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\c57044e495d3bf9b32d6ca2a73d36e0d.php 第 402 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\c57044e495d3bf9b32d6ca2a73d36e0d.php 第 405 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-07-19T09:36:31+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Orders&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\OrdersController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_orders` [ RunTime:0.1350s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_orders` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_orders` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 416 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 419 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:36:37+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Orders&a=add&id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\OrdersController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_orders` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_orders` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 392 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 395 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-07-19T09:36:39+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Orders&a=add&id=15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\OrdersController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_orders` [ RunTime:0.0050s ]
+SQL: UPDATE `x_orders` SET `delivery`='',`delivery_code`='',`status`='2',`update_time`='1531964199' WHERE `id` = 15 [ RunTime:0.1160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020001s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 251 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 258 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 265 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 273 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 274 行.
+NOTIC: [8] Undefined variable: info E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 275 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 392 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\63b8f31e9a82644fb1a499d458e7cd07.php 第 395 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.043003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-19T09:36:40+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Orders&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\OrdersController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_orders` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_orders` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_orders` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 416 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 419 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-07-19T09:38:29+08:00 ] 127.0.0.1 /admin.php?m=Admin&c=Orders&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `x_admin` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `x_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_auth_group` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Indirect modification of overloaded property Admin\Controller\OrdersController::$admin has no effect E:\wamp\www\xiaohuanxiong\Application\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `x_orders` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `x_orders` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_orders` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_goods` WHERE `g_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `x_auth_group_access` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM x_auth_group_access a INNER JOIN x_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_auth_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `x_auth_rule` WHERE `id` IN ('2','3','4','5','6','7','8','9','1','13','10','11','12','14','15','16','17','18','19','42','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 416 行.
+NOTIC: [8] Undefined variable: token E:\wamp\www\xiaohuanxiong\Application\Runtime\Cache\Admin\25ea7223accfb8d283487f3fa7d021c7.php 第 419 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

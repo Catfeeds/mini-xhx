@@ -1,0 +1,57 @@
+<include file="Public:head"/>
+        <div class="gray-bg dashbard-1">
+                <div class="row">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="#">主页</a></li>
+                                    <li><a>订单管理</a></li>
+                                    <li><strong>订单编辑</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">订单序号</label>
+                                        <div class="col-sm-2">
+                                            {$info.sn}
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">寄送的物流公司</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="delivery" value="{$info.delivery}" class="form-control">
+                                        </div>
+                                    </div>
+                                     <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">寄送的物流单号</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="deliverycode" value="{$info.delivery_code}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">订单状态</label>
+                                        <div class="col-sm-2">
+                                        	<select name="status" class="form-control m-b">
+                                        		<option value="1" <if condition="$info.status eq 1">selected</if>>完成</option>
+                                        		<option value="2" <if condition="$info.status eq 2">selected</if>>等待发货</option>
+                                        		<option value="3" <if condition="$info.status eq 3">selected</if>>已经发货</option>
+                                        	</select>
+                                        </div>
+                                    </div>
+									<div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <button class="btn btn-primary" type="submit">保存</button>
+                                            <button class="btn btn-primary col-sm-offset-1" type="submit">取消</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+        </div>
+<include file="Public:foot"/>

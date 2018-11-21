@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="renderer" content="webkit">
+
+    <title>注册</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+	
+    <link href="./Themes/Admin/css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="./Themes/Admin/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+    <link href="./Themes/Admin/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="./Themes/Admin/css/animate.css" rel="stylesheet">
+    <link href="./Themes/Admin/css/style.css?v=2.2.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen   animated fadeInDown">
+        <div>
+            <div>
+                <h1 class="logo-name">XY</h1>
+            </div>
+            <h3>欢迎注册 象屿账号</h3>
+            <p>创建一个新账户</p>
+            <form class="m-t" role="form" method="post" action="">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="请输入用户名" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password"  placeholder="请输入密码" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="repassword" placeholder="请再次输入密码" required="">
+                </div>
+				<div class="form-group">
+                    <input type="text" class="form-control" name="tel"  placeholder="请输入手机号" required="">
+                </div>
+				<div class="form-group">
+                    <input type="text" class="form-control" name="code" placeholder="请输入下方验证码" required="">
+					<img alt="验证码" src="{:U('verify',array('id'=>1))}" onclick="this.src='{:U('verify',array('id'=>1))}&time='+Math.random();" title="点击刷新"> 
+                </div>
+				 <button type="submit" class="btn btn-primary block full-width m-b">注 册</button>
+
+                <p class="text-muted text-center"><small>已经有账户了？</small><a href="{:U('index')}">点此登录</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="./Themes/Admin/js/jquery-2.1.1.min.js"></script>
+    <script src="./Themes/Admin/js/bootstrap.min.js?v=3.4.0"></script>
+    <!-- iCheck -->
+    <script src="./Themes/Admin/js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+
+</body>
+
+</html>

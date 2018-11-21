@@ -1,0 +1,75 @@
+<include file="Public:head"/>
+        <div class="gray-bg dashbard-1">
+                <div class="row">
+                		<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/ueditor.config.js"></script>
+							<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/ueditor.all.min.js"> </script>
+							<script type="text/javascript" charset="utf-8" src="__ROOT__/Themes/Admin/js/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
+							<script type="text/javascript">
+								var ue = UE.getEditor('editor',{
+									imageUrl:"{:U('Company/addimg')}" ,        //图片上传提交地址
+								});
+							</script>
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <ol class="breadcrumb">
+                                    <li><a href="#">主页</a></li>
+                                    <li><a>每日必读管理</a></li>
+                                    <li><strong>每日必读添加/编辑</strong></li>
+                                </ol>
+                            </div>
+                            <div class="ibox-content">
+                                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">标题</label>
+                                        <div class="col-sm-2">
+                                            <input type="text" name="title" value="{$info.title}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="hr-line-dashed"></div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">封面</label>
+										<div class="col-sm-3">
+											<input type="file" name="img" class="form-control">
+										</div>
+										<div class="col-sm-3" style="position: relative;">
+											<if condition="$info.img eq ''"> 
+												<img src="__ROOT__/Themes/Admin/img/no_pic.png" id="site_logo" width="80px" height="80px"> 
+											<else /> 
+												<img src="__ROOT__{$info.img}" id="site_logo" width="80px" height="80px">
+												
+											</if>
+										</div>
+									</div>
+                                    <div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+										<label class="col-sm-2 control-label">详情</label>
+										<div class="col-sm-8">
+											<script id="editor" type="text/plain" style="width: 100%; height: 240px;" >{$info.content|htmlspecialchars_decode}</script>
+										</div>
+									</div>
+									<div class="hr-line-dashed"></div>
+                                    <div class="form-group">
+                                        <div class="col-sm-4 col-sm-offset-2">
+                                            <input type="hidden" value="1" name="is_show">
+                                            <button class="btn btn-primary" type="submit">保存</button>
+                                            <button class="btn btn-primary col-sm-offset-1" type="submit">取消</button>
+                                            <button class="btn btn-primary  col-sm-offset-1" type="submit" id="isShow">保存并发布</button>
+                                            <if condition="$info.is_show eq 1">
+                                            <button class="btn btn-primary  col-sm-offset-1" type="submit" id="cancelShow">取消发布</button>
+                                            </if>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <script>
+        $("#noShow,#cancelShow").click(function(){
+            $("input[name='is_show']").val(2);
+        });
+        $("#isShow").click(function(){
+            $("input[name='is_show']").val(1);
+        });
+        </script>
+<include file="Public:foot"/>
